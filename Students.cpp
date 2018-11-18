@@ -27,16 +27,23 @@ void Students::set_marks(int markspr[4]) {
 		Students::marks[i] = markspr[i];
 	}
 };
-int Students::get_marks_1() {
-	return Students::marks[0];
+int Students::get_marks(int index) {
+	switch (index) {
+	case 1:
+		return Students::marks[0];
+	case 2:
+		return Students::marks[1];
+	case 3:
+		return Students::marks[2];
+	case 4:
+		return Students::marks[3];
+	}
 };
-int Students::get_marks_2() {
-	return Students::marks[1];
+// ab = average ball
+void Students::set_average_ball(double ab1) {
+	Students::ab = ab1;
 };
-int Students::get_marks_3() {
-	return Students::marks[2];
-};
-int Students::get_marks_4() {
-	return Students::marks[3];
+double Students::get_average_ball() {
+	return Students::ab;
 };
 Students:: ~Students(){};
