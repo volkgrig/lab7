@@ -10,6 +10,7 @@ private:
 	std::string group;
 	std::string NRB;
 	int         marks[4];
+	double      ab;
 public:
 	void set_name(std::string name1);
 	std::string get_name();
@@ -19,9 +20,8 @@ public:
 	void set_NumberofRecordBook(std::string NRB1);
 	std::string get_NumberofRecordBook();
 	void set_marks(int markspr[4]);
-	int get_marks_1();
-	int get_marks_2();
-	int get_marks_3();
-	int get_marks_4();
+	int get_marks(int index);
+	void set_average_ball(double ab1);
+	double get_average_ball();
 	~Students();
 };
