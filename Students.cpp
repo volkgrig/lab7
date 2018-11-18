@@ -39,4 +39,11 @@ int Students::get_marks_3() {
 int Students::get_marks_4() {
 	return Students::marks[3];
 };
+// ab = average ball
+void Students::set_average_ball(double ab1) {
+	Students::ab = ab1;
+};
+double Students::get_average_ball() {
+	return Students::ab;
+};
 Students:: ~Students(){};
